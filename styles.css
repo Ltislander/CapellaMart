@@ -20,7 +20,32 @@ header {
     margin: 0 auto;
 }
 
-/* Other styles remain the same */
+.logo {
+    width: 150px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 30px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ffffff;
+    color: #1d1f33;
+    max-width: 400px;
+}
+
+.account-and-cart {
+    display: flex;
+    align-items: center;
+}
+
+.account-link, .cart-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
 
 .banner {
     margin: 30px auto;
@@ -60,34 +85,18 @@ header {
     /* Add other testimonial styles here (optional) */
 }
 
-/* Other styles remain the same */
-
-
-.logo {
-    width: 150px;
-}
-
-.search-bar {
-    flex-grow: 1;
-    margin: 0 30px;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    background-color: #ffffff;
-    color: #1d1f33;
-    max-width: 400px;
-}
-
-.account-and-cart {
+footer {
     display: flex;
+    justify-content: center;
     align-items: center;
+    background-color: #1d1f33;
+    padding: 20px 0;
+    margin-top: auto;
+    flex-wrap: wrap;
 }
 
-.account-link, .cart-link {
-    color: #fff;
+footer a {
+    color: #ffffff;
     text-decoration: none;
-    margin-left: 15px;
+    margin: 5px 10px;
 }
-
-/* Other styles remain the same */
