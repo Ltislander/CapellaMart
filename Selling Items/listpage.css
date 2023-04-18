@@ -1,0 +1,80 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1d1f33;
+}
+
+
+.logo {
+  width: 150px;
+  padding: 15px 30px;
+}
+
+.list-your-items {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 30px auto;
+max-width: 600px;
+}
+
+
+
+.list-your-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+.list-your-items h1 {
+  color: #ffffff;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.list-your-items p {
+  color: #ffffff;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.list-your-items form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.list-your-items label {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.list-your-items input, .list-your-items textarea, .list-your-items select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #1d1f33;
+}
+
+.list-your-items textarea {
+  resize: none;
+}
+
+.list-your-items button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3d3f53;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.list-your-items button:hover {
+  background-color: #2d2f43;
+}
