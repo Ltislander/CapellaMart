@@ -83,14 +83,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #1d1f33;
   padding: 20px 0;
   margin-top: auto;
   flex-wrap: wrap;
 }
 
 footer a {
-  color: #1d1f33;
+  color: #ffffff;
   text-decoration: none;
   margin: 5px 10px;
 }
