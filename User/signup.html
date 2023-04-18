@@ -17,6 +17,7 @@
         <p>Create an account to start using our marketplace:</p>
 
         <form action="#" method="POST">
+            <button type="button" onclick="goBack()">Back</button>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
 
@@ -40,5 +41,10 @@
         <a href="#">Terms & Conditions</a>
         <a href="#">Privacy Policy</a>
     </footer>
+    <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
 </body>
 </html>
