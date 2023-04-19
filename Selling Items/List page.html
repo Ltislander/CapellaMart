@@ -1,20 +1,37 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List Your Items</title>
+    <title>Product Listing Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="listpage.css">
 </head>
 <body>
     <header>
-      <img src="https://cdn.discordapp.com/attachments/1098005406711812136/1098005496893550632/Polaris_Logo.png" alt="Polaris Logo" class="logo">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="https://cdn.discordapp.com/attachments/1098005406711812136/1098005496893550632/Polaris_Logo.png" alt="Polaris Logo" class="logo">
+            </div>
+            <nav class="top-bar">
+                <a href="#" class="nav-button">Home</a>
+                <a href="#" class="nav-button">Help</a>
+                <a href="#" class="nav-button">Starred</a>
+            </nav>
+        </div>
+        <div class="search-and-account">
+            <input type="text" placeholder="Search for products" class="search-bar">
+            <a href="#" class="account-link">Account/Login</a>
+            <a href="#" class="cart-link">Cart</a>
+        </div>
     </header>
 
-    <main class = "list-your-items">
+    <main class="list-your-items">
+        <nav class="breadcrumb">
+            <a href="#" class="breadcrumb-link">Home</a> &gt;
+            <a href="#" class="breadcrumb-link">Category</a> &gt;
+            <span class="breadcrumb-current">Product</span>
+        </nav>
         <h1>List Your Items</h1>
         <p>Fill out the form below to list your item on our marketplace:</p>
 
