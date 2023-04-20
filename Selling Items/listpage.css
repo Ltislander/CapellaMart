@@ -1,7 +1,88 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1f33;
+  padding: 15px 30px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1f33;
+  padding: 15px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 150px;
+  margin-right: 0px;
+}
+.logo-container {
+  flex: 1;
+}
+.top-bar {
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-button {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.search-and-account {
+  display: flex;
+  align-items: center;
+}
+
+.account-and-cart {
+  display: flex;
+  align-items: center;
+  margin-left: 1100px;
+}
+.search-bar {
+  flex-grow: 1;
+  margin-right: 10px; /* Change margin to right */
+  padding: 15px 20px; /* Increase padding for a bigger search bar */
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #ffffff;
+  color: #1d1f33;
+  max-width: 1600px; /* Increase max-width for a bigger search bar */
+  font-size: 1.1em; /* Increase font size */
+  width: 60%;
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: flex-start; /* Change justify-content to flex-start */
+  align-items: center;
+  width: 35%;
+}
+
+.account-link, .cart-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #1d1f33;
+  font-family: Arial, sans-serif;
+  background-color: #2d2f43; /* Change this to a lighter color */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .logo-placeholder {
@@ -11,15 +92,15 @@ body {
   width: 150px;
   padding: 15px 30px;
 }
-
-.search-and-account {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1d1f33;
-  padding: 10px 30px;
+.top-bar {
+  justify-content: space-between; /* Add this line */
 }
 
+header {
+  background-color: #1d1f33;
+  padding: 15px 30px;
+  border-bottom: 1px solid #ffffff;
+}
 .breadcrumb {
   display: flex;
   justify-content: center;
@@ -79,7 +160,14 @@ body {
   max-width: 400px;
   margin: 30px auto;
 }
-
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .list-your-items {
 display: flex;
 flex-direction: column;
@@ -88,7 +176,30 @@ margin: 30px auto;
 max-width: 600px;
 }
 
+.condition-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
 
+.condition-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3d3f53;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1em;
+  width: 48%;
+}
+
+.condition-btn.active {
+  background-color: #2d2f43;
+}
+
+.condition-btn:hover {
+  background-color: #2d2f43;
+}
 
 .list-your-items {
   display: flex;
@@ -106,7 +217,9 @@ max-width: 600px;
 
 .list-your-items p {
   color: #ffffff;
-  font-size: 1.1em;
+  font-size: 1.4em; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+  letter-spacing: 1px; /* Add some letter spacing */
   margin-bottom: 30px;
   text-align: center;
 }
@@ -137,7 +250,7 @@ max-width: 600px;
 
 .list-your-items button {
   padding: 10px;
-  border: none;
+  border: 2px solid #000000; /* Add an outline */
   border-radius: 5px;
   background-color: #3d3f53;
   color: #ffffff;
@@ -146,6 +259,22 @@ max-width: 600px;
 }
 
 .list-your-items button:hover {
+  background-color: #2d2f43;
+}
+
+.account-link, .cart-link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 10px 15px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background-color: #3d3f53;
+  font-size: 0.9em;
+}
+
+.account-link:hover, .cart-link:hover {
   background-color: #2d2f43;
 }
 
@@ -164,3 +293,8 @@ footer a {
   text-decoration: none;
   margin: 5px 10px;
 }
+
+.list-your-items input#item-price {
+  max-width: 150px;
+}
+

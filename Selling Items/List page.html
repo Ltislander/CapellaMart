@@ -19,11 +19,18 @@
                 <a href="#" class="nav-button">Starred</a>
             </nav>
         </div>
-        <div class="search-and-account">
+        <div class="search-bar-container">
             <input type="text" placeholder="Search for products" class="search-bar">
-            <a href="#" class="account-link">Account/Login</a>
-            <a href="#" class="cart-link">Cart</a>
         </div>
+        <div class="top-bar">
+        
+            <div class="account-and-cart">
+                <a href="#" class="account-link">Account/Login</a>
+                <a href="#" class="cart-link">Cart</a>
+            </div>
+        </div>
+       
+        
     </header>
 
     <main class="list-your-items">
@@ -33,7 +40,7 @@
             <span class="breadcrumb-current">Product</span>
         </nav>
         <h1>List Your Items</h1>
-        <p>Fill out the form below to list your item on our marketplace:</p>
+        <p>Share your item with the world - complete the boxes below!</p>
 
         <form action="#" method="POST">
             <label for="item-name">Item Name:</label>
@@ -43,17 +50,16 @@
             <textarea id="item-description" name="item-description" rows="5" required></textarea>
 
             <label for="item-category">Category:</label>
-            <select id="item-category" name="item-category" required>
-                <option value="">Select a category</option>
-                <option value="electronics">Electronics</option>
-                <option value="clothing">Clothing</option>
-                <option value="home">Home</option>
-                <!-- Add more categories here -->
-            </select>
-
+            <input type="text" id="item-category" name="item-category" required>
+                
             <label for="item-price">Price:</label>
             <input type="number" id="item-price" name="item-price" step="0.01" min="0" required>
-
+            <label for="item-condition">Condition:</label>
+            <div class="condition-buttons">
+              <button type="button" class="condition-btn" data-condition="new">New</button>
+              <button type="button" class="condition-btn" data-condition="used">Used</button>
+            </div>
+            <input type="hidden" id="item-condition" name="item-condition">
             <label for="item-image">Upload Image:</label>
             <input type="file" id="item-image" name="item-image" accept="image/*" required>
 
@@ -68,5 +74,7 @@
         <a href="#">Terms & Conditions</a>
         <a href="#">Privacy Policy</a>
     </footer>
+
+    <script src="listpage.js"></script>
 </body>
 </html>
