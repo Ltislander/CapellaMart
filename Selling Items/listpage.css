@@ -352,5 +352,94 @@ footer a {
 .listings-title {
   color: #ffffff;
   text-align: left;
-  padding: 15px 30px;
+  padding: 15px;
+  position: relative;
+  right: 0;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side {
+  width: 20%;
+  margin-right: 2%;
+}
+
+.right-side {
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(206, 172, 120, 0.397); /* Add a semi-transparent white background */
+  padding: 40px; /* Add padding around the content */
+  border-radius: 10px; /* Add border-radius for smooth edges */
+}
+
+.seller-profile-title {
+  color: #ffffff;
+  text-align: left;
+}
+
+.seller-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(185, 128, 128, 0.397); /* Add a semi-transparent white background */
+  padding: 20px; /* Add padding around the content */
+  border-radius: 10px; /* Add border-radius for smooth edges */
+}
+
+.seller-profile-picture {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.seller-name {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.seller-rating {
+  display: flex;
+  align-items: center;
+}
+
+.seller-rating span {
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reviews {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.reviews-title {
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.reviews ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.reviews li {
+  color: #ffffff;
+  margin-bottom: 5px;
 }
