@@ -1,53 +1,71 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1d1f33;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #1d1f33;
     padding: 15px 30px;
-}
-
-.top-bar {
+  }
+  .header-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d1f33;
+    padding: 15px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    width: 150px;
+    margin-right: 0px;
+  }
+  .logo-container {
+    flex: 1;
+  }
+  .top-bar {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.logo {
-    width: 150px;
-}
-
-.search-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-button {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+  }
+  
+  .search-and-account {
+    display: flex;
+    align-items: center;
+  }
+  
+  .account-and-cart {
+    display: flex;
+    align-items: center;
+    margin-left: 1100px;
+  }
+  .search-bar {
     flex-grow: 1;
     margin: 0 30px;
-    padding: 10px 15px;
+    padding: 13px 15px;
     border: none;
     border-radius: 5px;
     outline: none;
     background-color: #ffffff;
     color: #1d1f33;
-    max-width: 400px;
+    max-width: 2000px;
 }
-
-.account-and-cart {
+  
+  .search-bar-container {
     display: flex;
+    justify-content: flex-start; /* Change justify-content to flex-start */
     align-items: center;
-}
-
-.account-link, .cart-link {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 15px;
-}
-
-.banner {
+    width: 50%;
+  }
+  .banner {
     margin: 30px auto;
     width: 100%;
     max-width: 1200px;
@@ -61,75 +79,121 @@ header {
     max-width: 800px;
 }
 
-.categories {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 30px auto;
-    max-width: 1200px;
-}
-
-.featured-products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    margin: 30px auto;
-    max-width: 1200px;
-    justify-items: center;
-}
-
-.testimonials {
+  .account-link, .cart-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #2d2f43; /* Change this to a lighter color */
+    margin: 0;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .logo-placeholder {
+    width: 150px;
+  }
+  .logo {
+    width: 150px;
+    padding: 15px 30px;
+  }
+  .top-bar {
+    justify-content: space-between; /* Add this line */
+  }
+  
+  header {
+    background-color: #1d1f33;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ffffff;
+  }
+  .breadcrumb {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    /* Add other testimonial styles here (optional) */
-}
-
-footer {
+    margin: 10px 0;
+  }
+  
+  .breadcrumb-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 5px;
+  }
+  
+  .breadcrumb-link::after {
+    content: ">";
+    margin-left: 5px;
+  }
+  
+  .breadcrumb-current {
+    color: #ffffff;
+    margin-left: 5px;
+  }
+  
+  
+  .top-bar {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #1d1f33;
-    padding: 20px 0;
-    margin-top: auto;
-    flex-wrap: wrap;
-}
-
-footer a {
-    color: #ffffff;
+  }
+  
+  .nav-button {
+    color: #1d1f33; /* Change text color to match the background */
     text-decoration: none;
-    margin: 5px 10px;
-}
-
-.signup-page {
+    margin-left: 15px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff; /* Add a background color for better readability */
+  }
+  
+  .nav-button:hover {
+    background-color: #3d3f53;
+    color: #ffffff;
+  }
+  
+  .header-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    margin: 30px auto;
-}
-
-.signup-form {
-    display: flex;
-    flex-direction: column;
+    background-color: #1d1f33;
+    padding: 15px 30px;
+  }
+  .banner {
+    display: block;
     width: 100%;
     max-width: 400px;
-}
-
-.signup-form label {
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.signup-form input {
-    padding: 10px;
+    margin: 30px auto;
+  }
+  .search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .list-your-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  max-width: 600px;
+  }
+  
+  .condition-buttons {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ffffff;
-    color: #1d1f33;
-}
-
-.signup-button {
+  }
+  
+  .condition-btn {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -137,8 +201,257 @@ footer a {
     color: #ffffff;
     cursor: pointer;
     font-size: 1em;
-}
-
-.signup-button:hover {
+    width: 48%;
+  }
+  
+  .condition-btn.active {
     background-color: #2d2f43;
-}
+  }
+  
+  .condition-btn:hover {
+    background-color: #2d2f43;
+  }
+  
+  .list-your-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 600px;
+  }
+  
+  .list-your-items h1 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .list-your-items p {
+    color: #ffffff;
+    font-size: 1.4em; /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    letter-spacing: 1px; /* Add some letter spacing */
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .list-your-items form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .list-your-items label {
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .list-your-items input, .list-your-items textarea, .list-your-items select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #1d1f33;
+  }
+  
+  .list-your-items textarea {
+    resize: none;
+  }
+  
+  .list-your-items button {
+    padding: 10px;
+    border: 2px solid #000000; /* Add an outline */
+    border-radius: 5px;
+    background-color: #3d3f53;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .list-your-items button:hover {
+    background-color: #2d2f43;
+  }
+  
+  .account-link, .cart-link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 10px 15px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #3d3f53;
+    font-size: 0.9em;
+  }
+  
+  .account-link:hover, .cart-link:hover {
+    background-color: #2d2f43;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1f33;
+    padding: 20px 0;
+    margin-top: auto;
+    flex-wrap: wrap;
+  }
+  
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 5px 10px;
+  }
+  
+  .list-your-items input#item-price {
+    max-width: 150px;
+  }
+  
+  .product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 600px;
+  }
+  
+  .product-info {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Add a semi-transparent white background */
+    padding: 20px; /* Add some padding around the text */
+    border-radius: 10px; /* Add border-radius to make the edges smooth */
+  }
+  
+  .product-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+  }
+  
+  .product-description,
+  .product-category,
+  .product-price,
+  .product-condition {
+    color: #ffffff;
+    font-size: 1.1em;
+    margin: 10px 0;
+  }
+  
+  .add-to-cart {
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #3d3f53;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #2d2f43;
+  }
+  
+  .product-info h1 {
+    color: #ffffff;
+  }
+  .product-list h1{
+    color: #ffffff;
+  }
+  .listings-title {
+    color: #ffffff;
+    text-align: left;
+    padding: 15px;
+    position: relative;
+    right: 0;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-side {
+    width: 20%;
+    margin-right: 2%;
+  }
+  
+  .right-side {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(206, 172, 120, 0.397); /* Add a semi-transparent white background */
+    padding: 40px; /* Add padding around the content */
+    border-radius: 10px; /* Add border-radius for smooth edges */
+  }
+  
+  .seller-profile-title {
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  .seller-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(185, 128, 128, 0.397); /* Add a semi-transparent white background */
+    padding: 20px; /* Add padding around the content */
+    border-radius: 10px; /* Add border-radius for smooth edges */
+  }
+  
+  .seller-profile-picture {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .seller-name {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px 0;
+  }
+  
+  .seller-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .seller-rating span {
+    color: #ffffff;
+    margin-right: 5px;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .reviews {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .reviews-title {
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .reviews ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .reviews li {
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  
