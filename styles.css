@@ -49,21 +49,23 @@ header {
   }
   .search-bar {
     flex-grow: 1;
-    margin: 0 30px;
-    padding: 13px 15px;
+    margin-right: 10px; /* Change margin to right */
+    padding: 15px 20px; /* Increase padding for a bigger search bar */
     border: none;
     border-radius: 5px;
     outline: none;
     background-color: #ffffff;
     color: #1d1f33;
-    max-width: 2000px;
-}
+    max-width: 1600px; /* Increase max-width for a bigger search bar */
+    font-size: 1.1em; /* Increase font size */
+    width: 60%;
+  }
   
   .search-bar-container {
     display: flex;
     justify-content: flex-start; /* Change justify-content to flex-start */
     align-items: center;
-    width: 50%;
+    width: 35%;
   }
   .banner {
     margin: 30px auto;
