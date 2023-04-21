@@ -266,3 +266,8 @@ header {
     object-fit: cover;
     margin-top: 10px;
 }
+
+.category-item h3 {
+  font-size: 24px; /* Adjust the font size to your preference */
+  margin-bottom: 10px; /* Add some space between the text and the image */
+}
