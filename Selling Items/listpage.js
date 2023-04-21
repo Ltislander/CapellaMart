@@ -7,3 +7,13 @@ document.querySelectorAll('.condition-btn').forEach(function (button) {
       document.querySelector('#item-condition').value = this.dataset.condition;
   });
 });
+
+
+document.getElementById("chatTab").addEventListener("click", function () {
+  var chatBox = document.getElementById("chatBox");
+  if (chatBox.style.display === "none") {
+    chatBox.style.display = "block";
+  } else {
+    chatBox.style.display = "none";
+  }
+});
