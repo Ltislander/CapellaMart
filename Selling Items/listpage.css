@@ -368,7 +368,7 @@ footer a {
 }
 
 .right-side {
-  width: 28%;
+  width: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -442,4 +442,37 @@ footer a {
 .reviews li {
   color: #ffffff;
   margin-bottom: 5px;
+}
+.left-sidebar {
+  width: 20%; /* Change the width to a percentage value */
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+
+.recommended-title {
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.recommended-item {
+  margin-bottom: 15px;
+}
+
+.recommended-item img {
+  width: 100%;
+  max-width: 150px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.recommended-item p {
+  color: #ffffff;
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
 }
