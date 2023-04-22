@@ -17,3 +17,8 @@ document.getElementById("chatTab").addEventListener("click", function () {
     chatBox.style.display = "none";
   }
 });
+
+function changeImage(clickedThumbnail) {
+  var mainImage = document.getElementById('main-image');
+  mainImage.src = clickedThumbnail.src;
+}

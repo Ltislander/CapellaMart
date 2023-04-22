@@ -363,10 +363,14 @@ footer a {
 }
 
 .left-side {
-  width: 20%;
-  margin-right: 2%;
+  width: 75%; /* Adjust the width to fit the content accordingly */
+  display: flex; /* Add display: flex to use flexbox layout */
+  flex-direction: row; /* Change flex-direction to row */
+  /* align-items: center; Align the items vertically centered */
+  gap: 20px; /* Add some gap between the image and the text */
+  margin-left: 3%;
+  margin-right: 3%;
 }
-
 .right-side {
   width: 10%;
   display: flex;
@@ -557,5 +561,34 @@ footer a {
   border: none;
   border-radius: 3px;
   margin-left: 5px;
+  cursor: pointer;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc; /* Adjust border color and width as needed */
+  border-radius: 5px; /* Adjust border-radius for rounded corners */
+  padding: 15px; /* Adjust padding as needed */
+  background-color:  rgba(255, 255, 255, 0.1);
+  margin-bottom: 15px; /* Adjust margin between boxes */
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 30%; /* Adjust this value to your desired thumbnail size */
+  height: auto;
+  margin: 0 5px;
   cursor: pointer;
 }
