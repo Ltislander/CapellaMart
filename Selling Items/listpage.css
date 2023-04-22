@@ -311,6 +311,8 @@ footer a {
   background-color: rgba(255, 255, 255, 0.1); /* Add a semi-transparent white background */
   padding: 20px; /* Add some padding around the text */
   border-radius: 10px; /* Add border-radius to make the edges smooth */
+  width: 90%;
+  height: 50%;
 }
 
 .product-image {
@@ -319,7 +321,14 @@ footer a {
   margin: 20px 0;
 }
 
-.product-description,
+.product-description{
+  color: #ffffff;
+  font-size: 1.1em;
+  margin: 10px 0;
+
+}
+
+
 .product-category,
 .product-price,
 .product-condition {
@@ -336,7 +345,7 @@ footer a {
   color: #ffffff;
   cursor: pointer;
   font-size: 1em;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .add-to-cart:hover {
@@ -595,12 +604,14 @@ footer a {
 
 .shipping-details {
   background-color: rgba(255, 255, 255, 0.1);
-  
+  border-radius: 5px;
   border-radius: 5px;
   padding: 15px;
   margin: 15px 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   color: #ffffff;
+  width: 90%;
+  height: 50%;
 }
 
 .shipping-details h2 {
@@ -616,4 +627,60 @@ footer a {
 .shipping-details a:hover {
   color: #ffffff;
   text-decoration: underline;
+}
+
+.product-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc; /* Adjust border color and width as needed */
+  border-radius: 5px; /* Adjust border-radius for rounded corners */
+  padding: 15px; /* Adjust padding as needed */
+  background-color:  rgba(255, 255, 255, 0.1);
+  margin-bottom: 15px; /* Adjust margin between boxes */
+  width: 50%;
+  height: 95%;
+}
+.product-box h1{
+  color: #ffffff;
+}
+.more-details-btn{
+  background-color: rgba(51, 39, 39, 0.219);
+  color: #ffffff;
+  border: 2px solid #000000; /* Add a black border */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 8px 16px; /* Adjust padding to match other buttons */
+}
+.more-details-btn:hover {
+  background-color: rgba(0, 0, 0, 0.3); /* Change the background color to a darker shade on hover */
+}
+
+.more-details-wrap {
+  display: inline-block;
+  border-bottom: 1px solid #000000; /* Add a black border line underneath */
+  padding-bottom: 3px; /* Add some padding below the text to separate it from the line */
+  width: 75%;
+}
+
+.star-btn{
+  background-color: rgba(151, 110, 35, 0.699);
+  color: #ffffff;
+  border: 2px solid #000000; /* Add a black border */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 8px 16px; /* Adjust padding to match other buttons */
+}
+.star-btn:hover {
+  background-color: rgba(0, 0, 0, 0.3); /* Change the background color to a darker shade on hover */
 }
