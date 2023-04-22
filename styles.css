@@ -266,3 +266,24 @@ header {
     object-fit: cover;
     margin-top: 10px;
 }
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align the category items to the left */
+  text-align: left; /* Align the text to the left */
+  margin-bottom: 20px;
+}
+
+.category-listings {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Align the listings to the top */
+  margin-top: 10px;
+  gap: 10px; /* Add some space between the listings */
+}
+
+.category-listings p {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
