@@ -293,3 +293,19 @@ header {
     object-fit: cover;
     margin-bottom: 5px;
 }
+
+@media (max-width: 1440px) {
+  /* Add your CSS adjustments for MacBook Pro 15" screens here */
+}
+
+@media (max-width: 1280px) {
+  /* Add your CSS adjustments for MacBook Pro 13" screens here */
+}
+
+@media (max-width: 1024px) {
+  /* Add your CSS adjustments for smaller screens here */
+}
+
+@media (max-width: 3456px) {
+  /* Add your CSS adjustments for 16-inch MacBook Pro screens here */
+}
