@@ -243,7 +243,7 @@ header {
 
 
   .category-list {
-    color:#ffffff;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -252,11 +252,11 @@ header {
 }
 
 .category-item {
-    color:#ffffff;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     margin-bottom: 20px;
 }
 
@@ -267,23 +267,29 @@ header {
     margin-top: 10px;
 }
 
-.category-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Align the category items to the left */
-  text-align: left; /* Align the text to the left */
-  margin-bottom: 20px;
-}
-
 .category-listings {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start; /* Align the listings to the top */
-  margin-top: 10px;
-  gap: 10px; /* Add some space between the listings */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 10px;
+    gap: 10px;
 }
 
 .category-listings p {
-  margin-bottom: 5px;
-  font-size: 18px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.listing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px; /* Set the listing width to match the image width */
+}
+
+.listing img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 5px;
 }
