@@ -316,10 +316,20 @@ header {
   flex-direction: column;
   align-items: left;
   border: 1px solid #ccc; /* Adjust border color and width as needed */
-  border-radius: 5px; /* Adjust border-radius for rounded corners */
+  border-radius: 10px; /* Adjust border-radius for rounded corners */
   padding: 15px; /* Adjust padding as needed */
   background-color:  rgba(255, 255, 255, 0.1);
   margin-bottom: 15px; /* Adjust margin between boxes */
   width: 50%;
   height: 95%;
+}
+
+.listing {
+  margin: 10px; /* Add a margin of 10 pixels */
+}
+.category-item {
+  border-radius: 5px;
+}
+.category-item h3 {
+  margin-left: 10px;
 }
