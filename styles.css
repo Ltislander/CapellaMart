@@ -314,7 +314,7 @@ header {
 .product-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   border: 1px solid #ccc; /* Adjust border color and width as needed */
   border-radius: 5px; /* Adjust border-radius for rounded corners */
   padding: 15px; /* Adjust padding as needed */
