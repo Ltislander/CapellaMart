@@ -19,6 +19,14 @@ document.getElementById("chatTab").addEventListener("click", function () {
 });
 
 function changeImage(clickedThumbnail) {
-  var mainImage = document.getElementById('main-image');
+  var mainImage = document.querySelector('.product-image');
+  
+  // Store the main image src temporarily
+  var mainImageSrc = mainImage.src;
+  
+  // Set the main image src to the clicked thumbnail src
   mainImage.src = clickedThumbnail.src;
+
+  // Set the clicked thumbnail src to the stored main image src
+  clickedThumbnail.src = mainImageSrc;
 }

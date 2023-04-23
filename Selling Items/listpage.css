@@ -312,7 +312,7 @@ footer a {
   padding: 20px; /* Add some padding around the text */
   border-radius: 10px; /* Add border-radius to make the edges smooth */
   width: 90%;
-  height: 50%;
+  min-height: auto;
 }
 
 .product-image {
@@ -382,17 +382,17 @@ footer a {
 }
 .right-side {
   width: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(206, 172, 120, 0.397); /* Add a semi-transparent white background */
-  padding: 40px; /* Add padding around the content */
-  border-radius: 10px; /* Add border-radius for smooth edges */
+  display: block;
+  background-color: rgba(206, 172, 120, 0.397);
+  padding: 40px;
+  border-radius: 10px;
+  margin-right: 10px; /* Add a 10px buffer on the right side */
+  margin-bottom: 10px; /* Add a 10px buffer on the bottom side */
+  margin-left: 10px; /* Add a 10px buffer on the left side */
 }
-
 .seller-profile-title {
   color: #ffffff;
-  text-align: left;
+  text-align: center;
 }
 
 .seller-profile {
@@ -464,6 +464,7 @@ footer a {
   border-radius: 10px; 
   align-items: center;
   margin-left: 8%; 
+  min-width: 200px;
 }
 
 
