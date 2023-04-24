@@ -98,6 +98,8 @@ header {
     min-height: 100vh;
   }
   
+/* Replace other color definitions in your CSS with the appropriate variables */
+
   .logo-placeholder {
     width: 150px;
   }
@@ -340,6 +342,10 @@ header {
   padding: 10px 0; /* Add some padding to separate the navigation bar from the header and breadcrumb */
 }
 
+.category-nav a:hover {
+  color: #cccccc; /* Change the color on hover */
+}
+
 .category-nav ul {
   list-style-type: none;
   margin: 0;
@@ -356,7 +362,7 @@ header {
 .category-nav a {
   color: #ffffff; /* Set the text color to white */
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 .category-nav a:hover {
