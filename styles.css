@@ -333,3 +333,60 @@ header {
 .category-item h3 {
   margin-left: 10px;
 }
+
+/* Category navigation bar styles */
+.category-nav {
+  background-color: #3d3f53; /* Set a different background color */
+  padding: 10px 0; /* Add some padding to separate the navigation bar from the header and breadcrumb */
+}
+
+.category-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the category list items horizontally */
+  align-items: center;
+}
+
+.category-nav li {
+  margin: 0 10px; /* Add some margin between the categories */
+}
+
+.category-nav a {
+  color: #ffffff; /* Set the text color to white */
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.category-nav a:hover {
+  text-decoration: underline; /* Add an underline to the category link when hovered */
+}
+
+/* Add your CSS adjustments for 16-inch MacBook Pro screens here */
+@media (max-width: 3072px) {
+  .header-container, .top-bar {
+    max-width: 95%; /* Adjust the max-width percentage */
+  }
+}
+
+/* Add your CSS adjustments for MacBook Pro 15" screens here */
+@media (max-width: 1440px) {
+  .header-container, .top-bar {
+    max-width: 95%; /* Adjust the max-width percentage */
+  }
+}
+
+/* Add your CSS adjustments for MacBook Pro 13" screens here */
+@media (max-width: 1280px) {
+  .header-container, .top-bar {
+    max-width: 95%; /* Adjust the max-width percentage */
+  }
+}
+
+/* Add your CSS adjustments for smaller screens here */
+@media (max-width: 1024px) {
+  .header-container, .top-bar {
+    max-width: 95%; /* Adjust the max-width percentage */
+  }
+}
