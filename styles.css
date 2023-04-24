@@ -369,30 +369,15 @@ header {
   text-decoration: underline; /* Add an underline to the category link when hovered */
 }
 
-/* Add your CSS adjustments for 16-inch MacBook Pro screens here */
 @media (max-width: 3072px) {
-  .header-container, .top-bar {
-    max-width: 95%; /* Adjust the max-width percentage */
+  /* Add CSS adjustments for 16-inch MacBook Pro screens here */
+  .header-container {
+    max-width: 95%; /* Change max-width to a percentage */
   }
-}
-
-/* Add your CSS adjustments for MacBook Pro 15" screens here */
-@media (max-width: 1440px) {
-  .header-container, .top-bar {
-    max-width: 95%; /* Adjust the max-width percentage */
+  .top-bar {
+    max-width: 95%; /* Change max-width to a percentage */
   }
-}
-
-/* Add your CSS adjustments for MacBook Pro 13" screens here */
-@media (max-width: 1280px) {
-  .header-container, .top-bar {
-    max-width: 95%; /* Adjust the max-width percentage */
-  }
-}
-
-/* Add your CSS adjustments for smaller screens here */
-@media (max-width: 1024px) {
-  .header-container, .top-bar {
-    max-width: 95%; /* Adjust the max-width percentage */
+  .banner {
+    max-width: 95%; /* Change max-width to a percentage */
   }
 }
