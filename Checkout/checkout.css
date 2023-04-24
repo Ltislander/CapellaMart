@@ -388,3 +388,51 @@ footer a {
 
 
 
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.checkout-container h1,
+.checkout-container h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.checkout-container input[type="text"],
+.checkout-container select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #1d1f33;
+  width: 100%;
+}
+
+.checkout-container button {
+  padding: 10px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  background-color: #1d1f33;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.checkout-container button:hover {
+  background-color: #ffffff;
+  color: #1d1f33;
+}
+
+.checkout-container p {
+  color: #ffffff;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <title>Capella Marketplace</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="checkout.css">
+
+</head>
+<body>
+ <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="Home Page.html">
+                <img src="https://cdn.discordapp.com/attachments/1098005406711812136/1098005496893550632/Polaris_Logo.png" alt="Polaris Logo" class="logo">
+                <a> 
+            </div>
+            <nav class="top-bar">
+                <a href="../Home Page.html" class="nav-button">Home</a>
+                <a href="#" class="nav-button">Help</a>
+                <a href="#" class="nav-button">Starred</a>
+            </nav>
+        </nav>
+        </div>
+        <div class="search-bar-container">
+            <input type="text" placeholder="Search for products" class="search-bar">
+        </div>
+        <div class="top-bar">
+            <div class="account-and-cart">
+                <a href="User/signup.html" class="account-link">Account/Login</a>
+                <a href="Checkout\Cart Page.html" class="cart-link">Cart</a>
+            </div>
+        </div>
+    </header>
+    <main>
+      <nav class="breadcrumb">
+        <a href="#" class="breadcrumb-link">Home</a> &gt;
+        <a href="#" class="breadcrumb-link">Cart</a> &gt;
+        <span class="breadcrumb-current">Checkout</span>
+    </nav>
+    <div class="checkout-container">
+      <h1>Checkout</h1>
+      <form>
+        <h2>Shipping Address</h2>
+        <input type="text" name="shipping-name" placeholder="Full Name">
+        <input type="text" name="shipping-address" placeholder="Address">
+        <input type="text" name="shipping-city" placeholder="City">
+        <input type="text" name="shipping-state" placeholder="State">
+        <input type="text" name="shipping-zip" placeholder="Zip Code">
+
+        <h2>Billing Address</h2>
+        <input type="text" name="billing-name" placeholder="Full Name">
+        <input type="text" name="billing-address" placeholder="Address">
+        <input type="text" name="billing-city" placeholder="City">
+        <input type="text" name="billing-state" placeholder="State">
+        <input type="text" name="billing-zip" placeholder="Zip Code">
+
+        <h2>Payment Method</h2>
+        <select name="payment-method">
+          <option value="credit-card">Credit Card</option>
+          <option value="debit-card">Debit Card</option>
+          <option value="paypal">PayPal</option>
+        </select>
+        <input type="text" name="card-number" placeholder="Card Number">
+        <input type="text" name="card-expiry" placeholder="Expiry Date (MM/YY)">
+        <input type="text" name="card-cvv" placeholder="CVV">
+
+        <h2>Order Summary</h2>
+        <p>Subtotal: $00.00</p>
+        <p>Shipping: $00.00</p>
+        <p>Taxes: $00.00</p>
+        <p>Total: $00.00</p>
+
+        <button type="submit">Place Order</button>
+      </form>
+    </div>
+
+
+
+
+
+
+  </main>
+
+    
+  <footer>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">FAQ</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Privacy Policy</a>
+  </footer>
+</body>
+</html>
