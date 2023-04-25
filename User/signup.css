@@ -83,6 +83,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: #ffffff;
 }
 
 .logo-placeholder {
@@ -443,3 +444,104 @@ footer a {
   color: #ffffff;
   margin-bottom: 5px;
 }
+
+
+/* below this is the CSS for the account page */
+
+.profile-page {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+/* this is the profile box */
+.profile-container {
+  max-width: 1200px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #ffffff;
+}
+/* this is the username on top */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-header img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-details {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.profile-details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+.profile-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+/* user-activity is actually the ratings box*/
+.user-posts, .user-activity, .user-friends {
+  flex-basis: calc(33% - 20px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  }
+  
+  .user-posts h2, .user-activity h2, .user-friends h2 {
+  margin-bottom: 15px;
+  }
+  
+  .user-post, .user-activity-item, .user-friend {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  }
+  
+  .user-post img, .user-friend img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  }
+  
+  .user-activity-item span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  }
+  
+  .user-activity-item.new span {
+  background-color: #00ff00;
+  }
+  
+  .user-activity-item.old span {
+  background-color: #ff0000;
+  }
+  .statistics{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;;
+    border-radius: 10px;
+  }
+  .contact-info{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+  }
