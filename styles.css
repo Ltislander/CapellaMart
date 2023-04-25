@@ -324,6 +324,7 @@ header {
   margin-bottom: 15px; /* Adjust margin between boxes */
   width: 50%;
   height: 95%;
+  align-self: center;
 }
 
 .listing {
