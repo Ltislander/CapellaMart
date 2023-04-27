@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.customization-options {
+  width: 300px;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+  border-right: 1px solid white;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.customization-options div {
+  margin: 10px 0;
+}
+
+/* text resizer*/
+
+.draggable {
+  position: absolute;
+}
+
+.resizable {
+  min-width: 50px;
+  min-height: 20px;
+  padding: 5px;
+}
+
+.resizable[contentEditable] {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  resize: none;
+  word-wrap: break-word;
+}
+
+/*Color Box*/
+
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.canvas {
+  flex-grow: 1;
+  position: relative;
+}
+
+.color-box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  position: absolute;
+}

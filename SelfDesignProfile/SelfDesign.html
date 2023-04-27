@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="SelfDesign.css">
+  <title>Profile Customization</title>
+</head>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<body>
+  <div class="page-container">
+    <div class="customization-options">
+      <h2>Customization</h2>
+      <div>
+        <label for="background-color">Background Color:</label>
+        <input type="color" id="background-color" value="#333">
+      </div>
+      <div>
+        <label for="text-color">Text Color:</label>
+        <input type="color" id="text-color" value="#FFF">
+      </div>
+      <div>
+        <label for="font-size">Font Size:</label>
+        <input type="number" id="font-size" min="12" max="36" value="16">
+      </div>
+      <button id="add-textbox">Add Textbox</button>
+      <div class="sidebar">
+        <h2>Create Color Box</h2>
+        <input type="color" id="color-picker">
+        <button id="create-box">Create Box</button>
+      </div>
+    </div>
+    <div class="main-content">
+      <h1>Profile Customization</h1>
+      <div class="textboxes-container"></div>
+    </div>
+  </div>
+  <script src="SelfDesign.js"></script>
+</body>
+</html>
