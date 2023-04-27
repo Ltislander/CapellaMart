@@ -1,384 +1,471 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1d1f33;
-    padding: 15px 30px;
-  }
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1d1f33;
-    padding: 15px 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .logo {
-    width: 150px;
-    margin-right: 0px;
-  }
-  .logo-container {
-    flex: 1;
-  }
-  .top-bar {
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .nav-button {
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-  }
-  
-  .search-and-account {
-    display: flex;
-    align-items: center;
-  }
-  
-  .account-and-cart {
-    display: flex;
-    align-items: center;
-    margin-left: 1100px;
-  }
-  .search-bar {
-    flex-grow: 1;
-    margin-right: 10px; /* Change margin to right */
-    padding: 15px 20px; /* Increase padding for a bigger search bar */
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    background-color: #ffffff;
-    color: #1d1f33;
-    max-width: 1600px; /* Increase max-width for a bigger search bar */
-    font-size: 1.1em; /* Increase font size */
-    width: 60%;
-  }
-  
-  .search-bar-container {
-    display: flex;
-    justify-content: flex-start; /* Change justify-content to flex-start */
-    align-items: center;
-    width: 35%;
-  }
-  .banner {
-    margin: 30px auto;
-    width: 100%;
-    max-width: 1200px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1f33;
+  padding: 15px 30px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1f33;
+  padding: 15px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 150px;
+  margin-right: 0px;
+}
+.logo-container {
+  flex: 1;
+}
+.top-bar {
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-button {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.search-and-account {
+  display: flex;
+  align-items: center;
+}
+
+.account-and-cart {
+  display: flex;
+  align-items: center;
+  margin-left: 1100px;
+}
+.search-bar {
+  flex-grow: 1;
+  margin-right: 10px; /* Change margin to right */
+  padding: 15px 20px; /* Increase padding for a bigger search bar */
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #ffffff;
+  color: #1d1f33;
+  max-width: 1600px; /* Increase max-width for a bigger search bar */
+  font-size: 1.1em; /* Increase font size */
+  width: 60%;
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: flex-start; /* Change justify-content to flex-start */
+  align-items: center;
+  width: 35%;
+}
+.banner {
+  margin: 30px auto;
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .banner img {
-    width: 100%;
-    max-width: 800px;
+  width: 100%;
+  max-width: 800px;
 }
 
-  .account-link, .cart-link {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #2d2f43; /* Change this to a lighter color */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
+.account-link, .cart-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2d2f43; /* Change this to a lighter color */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* Replace other color definitions in your CSS with the appropriate variables */
 
-  .logo-placeholder {
-    width: 150px;
-  }
-  .logo {
-    width: 150px;
-    padding: 15px 30px;
-  }
-  .top-bar {
-    justify-content: space-between; /* Add this line */
-  }
-  
-  header {
-    background-color: #1d1f33;
-    padding: 15px 30px;
-    border-bottom: 1px solid #ffffff;
-  }
-  .breadcrumb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-  }
-  
-  .breadcrumb-link {
-    color: #ffffff;
-    text-decoration: none;
-    margin-right: 5px;
-  }
-  
-  .breadcrumb-link::after {
-    content: ">";
-    margin-left: 5px;
-  }
-  
-  .breadcrumb-current {
-    color: #ffffff;
-    margin-left: 5px;
-  }
-  
-  
-  
-  .top-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1d1f33;
-  }
-  
-  .nav-button {
-    color: #1d1f33; /* Change text color to match the background */
-    text-decoration: none;
-    margin-left: 15px;
-    padding: 10px;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    background-color: #ffffff; /* Add a background color for better readability */
-  }
-  
-  .nav-button:hover {
-    background-color: #3d3f53;
-    color: #ffffff;
-  }
-  
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1d1f33;
-    padding: 15px 30px;
-  }
-  .banner {
-    display: block;
-    width: 100%;
-    max-width: 400px;
-    margin: 30px auto;
-  }
-  .search-bar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .condition-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .condition-btn {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #3d3f53;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 1em;
-    width: 48%;
-  }
-  
-  .condition-btn.active {
-    background-color: #2d2f43;
-  }
-  
-  .condition-btn:hover {
-    background-color: #2d2f43;
-  }
+.logo-placeholder {
+  width: 150px;
+}
+.logo {
+  width: 150px;
+  padding: 15px 30px;
+}
+.top-bar {
+  justify-content: space-between; /* Add this line */
+}
+
+header {
+  background-color: #1d1f33;
+  padding: 15px 30px;
+  border-bottom: 1px solid #ffffff;
+}
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.breadcrumb-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.breadcrumb-link::after {
+  content: ">";
+  margin-left: 5px;
+}
+
+.breadcrumb-current {
+  color: #ffffff;
+  margin-left: 5px;
+}
 
 
-  .account-link, .cart-link {
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    margin-left: 15px;
-    padding: 10px 15px;
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    background-color: #3d3f53;
-    font-size: 0.9em;
-  }
-  
-  .account-link:hover, .cart-link:hover {
-    background-color: #2d2f43;
-  }
-  
-  footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1d1f33;
-    padding: 20px 0;
-    margin-top: auto;
-    flex-wrap: wrap;
-  }
-  
-  footer a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 5px 10px;
-  }
+
+.top-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1f33;
+}
+
+.nav-button {
+  color: #1d1f33; /* Change text color to match the background */
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #ffffff; /* Add a background color for better readability */
+}
+
+.nav-button:hover {
+  background-color: #3d3f53;
+  color: #ffffff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1f33;
+  padding: 15px 30px;
+}
+.banner {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 30px auto;
+}
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.condition-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.condition-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3d3f53;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1em;
+  width: 48%;
+}
+
+.condition-btn.active {
+  background-color: #2d2f43;
+}
+
+.condition-btn:hover {
+  background-color: #2d2f43;
+}
 
 
-  .category-list {
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    width: 100%;
-    align-items: flex-start;
+.account-link, .cart-link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 10px 15px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background-color: #3d3f53;
+  font-size: 0.9em;
+}
+
+.account-link:hover, .cart-link:hover {
+  background-color: #2d2f43;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1f33;
+  padding: 20px 0;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 5px 10px;
+}
+
+
+.category-list {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  align-items: flex-start;
 }
 
 .category-item {
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    margin-bottom: 20px;
-    background-color:  rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color:  rgba(255, 255, 255, 0.1);
 }
 
 .category-item img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-top: 10px;
-}
-
-.category-listings {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    margin-top: 10px;
-    gap: 10px;
-}
-
-.category-listings p {
-    margin-bottom: 5px;
-    font-size: 18px;
-}
-
-.listing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100px; /* Set the listing width to match the image width */
-}
-
-.listing img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-    margin-bottom: 5px;
-}
-
-@media (max-width: 1440px) {
-  /* Add your CSS adjustments for MacBook Pro 15" screens here */
-}
-
-@media (max-width: 1280px) {
-  /* Add your CSS adjustments for MacBook Pro 13" screens here */
-}
-
-@media (max-width: 1024px) {
-  /* Add your CSS adjustments for smaller screens here */
-}
-
-@media (max-width: 3456px) {
-  /* Add your CSS adjustments for 16-inch MacBook Pro screens here */
-}
-
-.product-box {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  border: 1px solid #ccc; /* Adjust border color and width as needed */
-  border-radius: 10px; /* Adjust border-radius for rounded corners */
-  padding: 15px; /* Adjust padding as needed */
-  background-color:  rgba(255, 255, 255, 0.1);
-  margin-bottom: 15px; /* Adjust margin between boxes */
-  width: 50%;
-  height: 95%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-top: 10px;
   align-self: center;
 }
 
+.category-listings {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.category-listings p {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
 .listing {
-  margin: 10px; /* Add a margin of 10 pixels */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px; /* Set the listing width to match the image width */
+}
+
+.listing img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1440px) {
+/* Add your CSS adjustments for MacBook Pro 15" screens here */
+}
+
+@media (max-width: 1280px) {
+/* Add your CSS adjustments for MacBook Pro 13" screens here */
+}
+
+@media (max-width: 1024px) {
+/* Add your CSS adjustments for smaller screens here */
+}
+
+@media (max-width: 3456px) {
+/* Add your CSS adjustments for 16-inch MacBook Pro screens here */
+}
+
+.product-box {
+display: flex;
+flex-direction: column;
+align-items: left;
+border: 1px solid #ccc; /* Adjust border color and width as needed */
+border-radius: 10px; /* Adjust border-radius for rounded corners */
+padding: 15px; /* Adjust padding as needed */
+background-color:  rgba(255, 255, 255, 0.1);
+margin-bottom: 15px; /* Adjust margin between boxes */
+width: 50%;
+height: 95%;
+align-self: center;
+}
+
+.listing {
+margin: 10px; /* Add a margin of 10 pixels */
 }
 .category-item {
-  border-radius: 5px;
+border-radius: 5px;
 }
 .category-item h3 {
-  margin-left: 10px;
+margin-left: 10px;
+color: #ffffff;
 }
 
 /* Category navigation bar styles */
 .category-nav {
-  background-color: #3d3f53; /* Set a different background color */
-  padding: 10px 0; /* Add some padding to separate the navigation bar from the header and breadcrumb */
+background-color: #3d3f53; /* Set a different background color */
+padding: 10px 0; /* Add some padding to separate the navigation bar from the header and breadcrumb */
 }
 
 .category-nav a:hover {
-  color: #cccccc; /* Change the color on hover */
+color: #cccccc; /* Change the color on hover */
 }
 
 .category-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center; /* Center the category list items horizontally */
-  align-items: center;
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center; /* Center the category list items horizontally */
+align-items: center;
 }
 
 .category-nav li {
-  margin: 0 10px; /* Add some margin between the categories */
+margin: 0 10px; /* Add some margin between the categories */
 }
 
 .category-nav a {
-  color: #ffffff; /* Set the text color to white */
-  text-decoration: none;
-  font-size: 1.25em;
+color: #ffffff; /* Set the text color to white */
+text-decoration: none;
+font-size: 1.25em;
 }
 
 .category-nav a:hover {
-  text-decoration: underline; /* Add an underline to the category link when hovered */
+text-decoration: underline; /* Add an underline to the category link when hovered */
 }
 
 @media (max-width: 3072px) {
-  /* Add CSS adjustments for 16-inch MacBook Pro screens here */
-  .header-container {
-    max-width: 95%; /* Change max-width to a percentage */
-  }
-  .top-bar {
-    max-width: 95%; /* Change max-width to a percentage */
-  }
-  .banner {
-    max-width: 95%; /* Change max-width to a percentage */
-  }
+/* Add CSS adjustments for 16-inch MacBook Pro screens here */
+.header-container {
+  max-width: 95%; /* Change max-width to a percentage */
+}
+.top-bar {
+  max-width: 95%; /* Change max-width to a percentage */
+}
+.banner {
+  max-width: 95%; /* Change max-width to a percentage */
+}
+}
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
+.products-section {
+  flex-grow: 1;
+  align-self: center;
+  color: #ffffff;
+}
+
+.product-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #7c7c7c; /* Adjust border color and width as needed */
+  width: 200px; /* Set a fixed width for the product cards */
+  margin-bottom: 20px; /* Add some margin to separate the cards vertically */
+  color: #ffffff;
+
+}
+
+.product-image-wrapper {
+  position: relative;
+}
+
+.product-image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.product-card:hover .overlay {
+  opacity: 1;
+}
+
+.pagination a {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.pagination a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination .active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.quick-view {
+  background-color: rgba(231, 106, 106, 0.9);
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.category-item h1 {
+  color: #ffffff;
 }
