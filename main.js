@@ -59,8 +59,55 @@ function createProductCard(src, productName, price, ratingStars, ratingScore) {
       },
       
     ];
+
+
+    const clothingProducts = [
+        {
+          src: "https://cdn.discordapp.com/attachments/1098005406711812136/1098994818446794782/Ft7z7xZaQAAhCDc.jpg",
+          productName: "Clothing Product 1",
+          price: "15.00",
+          ratingStars: "★★★★☆",
+          ratingScore: "4.3",
+        },
+        {
+            src: "https://cdn.discordapp.com/attachments/1098005406711812136/1098994818446794782/Ft7z7xZaQAAhCDc.jpg",
+            productName: "Clothing Product 1",
+            price: "15.00",
+            ratingStars: "★★★★☆",
+            ratingScore: "4.3",
+          },
+          {
+            src: "https://cdn.discordapp.com/attachments/1098005406711812136/1098994818446794782/Ft7z7xZaQAAhCDc.jpg",
+            productName: "Clothing Product 1",
+            price: "15.00",
+            ratingStars: "★★★★☆",
+            ratingScore: "4.3",
+          },
+          {
+            src: "https://cdn.discordapp.com/attachments/1098005406711812136/1098994818446794782/Ft7z7xZaQAAhCDc.jpg",
+            productName: "Clothing Product 1",
+            price: "15.00",
+            ratingStars: "★★★★☆",
+            ratingScore: "4.3",
+          },
+          {
+            src: "https://cdn.discordapp.com/attachments/1098005406711812136/1098994818446794782/Ft7z7xZaQAAhCDc.jpg",
+            productName: "Clothing Product 1",
+            price: "15.00",
+            ratingStars: "★★★★☆",
+            ratingScore: "4.3",
+          },
+        // Add more clothing products here
+      ];
   
     const productsGrid = document.querySelector(".products-grid");
     productsGrid.innerHTML = products.map(product => createProductCard(product.src, product.productName, product.price, product.ratingStars, product.ratingScore)).join("");
+
+    //Clothing
+    const clothingProductsGrid = document.querySelector(".products-grid-clothing");
+    clothingProductsGrid.innerHTML = clothingProducts.map(product => createProductCard(product.src, product.productName, product.price, product.ratingStars, product.ratingScore)).join("");
+
+
   });
+  
   
